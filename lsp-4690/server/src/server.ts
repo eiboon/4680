@@ -14,19 +14,26 @@ import {
 	CompletionItemKind,
 	TextDocumentPositionParams,
 	TextDocumentSyncKind,
-	InitializeResult
+	InitializeResult,
+	CompletionList,
+	DidChangeTextDocumentParams
 } from 'vscode-languageserver/node';
 
 import {
 	TextDocument
 } from 'vscode-languageserver-textdocument';
 
+import {log} from './components/log';
+import { LanguageCompletion } from './providers/completion';
+import { didChange } from './providers/didChange';
+const logfile = '/log/server.log';
+const logger = new log(logfile);
 // Create a connection for the server, using Node's IPC as a transport.
 // Also include all preview / proposed LSP features.
 const connection = createConnection(ProposedFeatures.all);
 
 // Create a simple text document manager.
-const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
+export const documents: TextDocuments<TextDocument> = new TextDocuments(TextDocument);
 
 let hasConfigurationCapability = false;
 let hasWorkspaceFolderCapability = false;
@@ -51,7 +58,7 @@ connection.onInitialize((params: InitializeParams) => {
 
 	const result: InitializeResult = {
 		capabilities: {
-			textDocumentSync: TextDocumentSyncKind.Incremental,
+			textDocumentSync: TextDocumentSyncKind.Full,
 			// Tell the client that this server supports code completion.
 			completionProvider: {
 				resolveProvider: true
@@ -79,6 +86,30 @@ connection.onInitialized(() => {
 		});
 	}
 });
+
+connection.onCompletion((params:any):CompletionList|CompletionItem[]|null => {
+	console.log("Completion Request 1");
+	console.log(JSON.stringify(params));
+
+	const completion: LanguageCompletion = new LanguageCompletion(logger);
+	console.log("Completion Request 2");
+	const completionItems: CompletionList | null = completion.GetCompletionItems(params);
+	console.log({"completionItems":completionItems});
+	return completionItems;
+});
+connection.onDidChangeTextDocument((event)  => {
+	//Document has changed so call our providers
+	console.log("onDidChangeEvent");
+	logger.write({"onDidChangeTextDocument":event});
+	//didChange(event);
+	
+});
+documents.onDidChangeContent((e) => {
+	console.log("onDidChangeContentEvent");
+	console.log(JSON.stringify(e));
+	didChange(e);
+});
+
 
 // Make the text document manager listen on the connection
 // for open, change and close text document events
