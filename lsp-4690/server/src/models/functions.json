@@ -1,0 +1,292 @@
+{
+    "languageDefinitions": [
+        {
+            "name": "ABS",
+            "syntax": "x = ABS──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ASC",
+            "syntax": "i% = ASC──(string expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CHR$",
+            "syntax": "a$ = CHR$──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "COMMAND$",
+            "syntax": "a$ = COMMAND$ ──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CONCHAR%",
+            "syntax": "i2% = CONCHAR% ──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CONSTAT%",
+            "syntax": "i2% = CONSTAT% ──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DATE$",
+            "syntax": "a$ = DATE$───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DISABLE",
+            "syntax": "i4 = DISABLE──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ENABLE",
+            "syntax": "i4 = ENABLE──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ERR",
+            "syntax": "a$ = ERR──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ERRF%",
+            "syntax": "i% = ERRF%──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ERRL",
+            "syntax": "i% = ERRL──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ERRN",
+            "syntax": "i4 = ERRN──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "EVENT%",
+            "syntax": "i% = EVENT%──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "FLOAT",
+            "syntax": "x = FLOAT──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "FRE",
+            "syntax": "i4 = FRE──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "GET",
+            "syntax": "i% = GET──(I/O session number)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "GETLONG",
+            "syntax": "i4 = GETLONG──(I/O session number)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "INKEY",
+            "syntax": "i2% = INKEY──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "INT",
+            "syntax": "x = INT──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "INT%",
+            "syntax": "i4 = INT%──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LEFT$",
+            "syntax": "a$ = LEFT$──(string expression──,──numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LEN",
+            "syntax": "i2% = LEN──(string expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LOCK",
+            "syntax": "i4 = LOCK──(I/O session number──,──record number)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "MATCH",
+            "syntax": "i2% = MATCH──(pattern string──,──string expression──,──numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "MFRE",
+            "syntax": "i4 = MFRE──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "MID$",
+            "syntax": "a$ = MID$──(string expression──,──numeric expression──,──numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "MOD",
+            "syntax": "i4 = MOD──(numeric expression──,──numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PEEK",
+            "syntax": "a$ = PACK$──(string)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PEEK",
+            "syntax": "i% = PEEK──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "POS",
+            "syntax": "i2% = POS──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PTRRTN",
+            "syntax": "i4 = PTRRTN──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RENAME",
+            "syntax": "i% = RENAME──(name──,──name)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RIGHT$",
+            "syntax": "a$ = RIGHT$──(string expression──,──numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RND",
+            "syntax": "x = RND──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ROUND",
+            "syntax": "x = ROUND──(y──,──i%──j%)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "SADD",
+            "syntax": "i4 = SADD──(string variable)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "SGN",
+            "syntax": "i% = sgn──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "SHIFT",
+            "syntax": "i4 = SHIFT──(numeric expression──,──numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "STR$",
+            "syntax": "a$ = STR$──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "STRING$",
+            "syntax": "a$ = STRING$──(numeric expression──,──string expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "TAB",
+            "syntax": "TAB──(numeric expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "TIME$",
+            "syntax": "a$ = TIME$──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "TRANSLATE$",
+            "syntax": "7-144 IBM 4680 BASIC: Language Reference",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "UCASE$",
+            "syntax": "a$ = UCASE$──(string expression)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "UNLOCK",
+            "syntax": "i4 = UNLOCK──(I/O session number──,──record number)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "UNPACK$",
+            "syntax": "a$ = UNPACK$──(string)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "VAL",
+            "syntax": "x = VAL──(digit string expression)──",
+            "description": "",
+            "color": ""
+        }
+    ]
+}
