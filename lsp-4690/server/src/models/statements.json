@@ -1,0 +1,496 @@
+{
+    "languageDefinitions": [
+        {
+            "name": "ACCESS",
+            "syntax": "Guide or the IBM 4690 Store System: Programming Guide.",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ASSIGNKEY",
+            "syntax": "ASSIGNKEY──function keynumber──,──function key str──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CALL",
+            "syntax": "CALL──function name──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CHAIN",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CHDIR",
+            "syntax": "CHDIR──pathname──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CLEARS",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CLOSE",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "COMMON",
+            "syntax": "COMMON───variable───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CONSOLE",
+            "syntax": "CONSOLE───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CREATE",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CREATE POSFILE",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CREATE POSFILE KEYED",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "CREATE POSFILE RANDOM/DIRECT",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DATA",
+            "syntax": "DATA─── constant ───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DEF",
+            "syntax": "Single─line:",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DELETE",
+            "syntax": "DELETE───I/O session number───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DELREC",
+            "syntax": "DELREC──I/O session number──;──key value──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "DIM",
+            "syntax": "DIM──identifier── (──subscript──) ──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "END",
+            "syntax": "END───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "END FUNCTION",
+            "syntax": "END FUNCTION──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "END SUB",
+            "syntax": "END SUB──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "EXIT FUNCTION",
+            "syntax": "EXIT FUNCTION──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "EXIT SUB",
+            "syntax": "EXIT SUB──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "FEND",
+            "syntax": "FEND──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "FOR",
+            "syntax": "FOR──index variable── = ──numeric expression──TO──numeric expression──5",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "FUNCTION",
+            "syntax": "Single line:",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "FUNCTIONKEY",
+            "syntax": " ┌──ON──┐",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "GOSUB",
+            "syntax": "GOSUB──label──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "GOTO",
+            "syntax": "GOTO──label──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "IF",
+            "syntax": "IF──logical expression──THEN──statement group1──5",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "IF END #",
+            "syntax": "IF END──#──I/O session number──THEN──label──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "INPUT",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "INPUT LINE",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "INTEGER",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LET",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LOAD",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LOCATE #",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LOCKDEV",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "LPRINTER",
+            "syntax": "LPRINTER──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "MKDIR",
+            "syntax": "MKDIR──pathname──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "NEXT",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ON",
+            "syntax": "7-92 IBM 4680 BASIC: Language Reference",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ON ASYNC ERROR CALL",
+            "syntax": "ON ASYNC ERROR CALL──subprogram name──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "ON ERROR",
+            "syntax": "ON ERROR──GOTO──label──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "OPEN",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "OPEN LINK",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "OPEN SERIAL",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "OPEN SESSION",
+            "syntax": "OPEN SESSION──session name──ON──link number──5",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "OPTION",
+            "syntax": "7-104 IBM 4680 BASIC: Language Reference",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "POINT",
+            "syntax": "POINT──I/O session number──;──offset──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "POKE",
+            "syntax": "POKE──numeric expression──,──numeric expression──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PRINT",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PRINT USING",
+            "syntax": "PRINT USING──format string──;───expression───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PRINT #",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PUT",
+            "syntax": "PUT──I/O session number──,──data──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "PUTLONG",
+            "syntax": "PUTLONG──I/O session number──,──data──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RANDOMIZE",
+            "syntax": "RANDOMIZE──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "READ",
+            "syntax": " Chapter 7. Statements and Language-Defined Functions 7-117",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "READ #",
+            "syntax": "7-118 IBM 4680 BASIC: Language Reference",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "READ # LINE",
+            "syntax": "7-120 IBM 4680 BASIC: Language Reference",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "READ FORM #",
+            "syntax": "READ FORM──format string──;──#──I/O session number──5",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "READ MATRIX",
+            "syntax": "READ MATRIX──#──I/O session number──;──array element──,──number of elements──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "REAL",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "REMARK",
+            "syntax": "REMARK──any characters──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RESTORE",
+            "syntax": "RESTORE──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RESUME",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RETURN",
+            "syntax": "RETURN──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "RMDIR",
+            "syntax": "RMDIR──pathname──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "STOP",
+            "syntax": "i4 = SIZE──(name)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "STOP",
+            "syntax": "STOP──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "STRING",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "SUB",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "TCLOSE",
+            "syntax": "TCLOSE──I/O session number──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "UNLOCKDEV",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "USE",
+            "syntax": "7-148 IBM 4680 BASIC: Language Reference",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WAIT",
+            "syntax": "i4 = VARPTR──(variable)──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WAIT",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WEND",
+            "syntax": "WEND───",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WHILE",
+            "syntax": "WHILE──logical expression──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WRITE #",
+            "syntax": "",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WRITE LOGO #",
+            "syntax": "WRITE LOGO──#──I/O session number──;──array element──",
+            "description": "",
+            "color": ""
+        },
+        {
+            "name": "WRITE MATRIX",
+            "syntax": "WRITE MATRIX──#──I/O session number──;──array element──,──number of elements",
+            "description": "",
+            "color": ""
+        }
+    ]
+}
