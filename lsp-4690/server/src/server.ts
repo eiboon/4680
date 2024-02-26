@@ -62,7 +62,20 @@ connection.onInitialize((params: InitializeParams) => {
 			// Tell the client that this server supports code completion.
 			completionProvider: {
 				resolveProvider: true
-			}
+			},
+			hoverProvider: true,
+			declarationProvider: true,
+			definitionProvider: true,
+			typeDefinitionProvider: true,
+			implementationProvider: true,
+			documentHighlightProvider: true,
+			documentSymbolProvider: true,
+			codeActionProvider: true,
+			colorProvider: true,
+			documentFormattingProvider: true,
+			renameProvider: true,
+			foldingRangeProvider: true,
+			
 		}
 	};
 	if (hasWorkspaceFolderCapability) {
