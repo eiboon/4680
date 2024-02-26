@@ -16,7 +16,8 @@ import {
 	TextDocumentSyncKind,
 	InitializeResult,
 	CompletionList,
-	DidChangeTextDocumentParams
+	DidChangeTextDocumentParams,
+	DocumentColorRequest
 } from 'vscode-languageserver/node';
 
 import {
@@ -26,6 +27,7 @@ import {
 import {log} from './components/log';
 import { LanguageCompletion } from './providers/completion';
 import { didChange } from './providers/didChange';
+import { connect } from 'http2';
 const logfile = '/log/server.log';
 const logger = new log(logfile);
 // Create a connection for the server, using Node's IPC as a transport.
@@ -71,11 +73,11 @@ connection.onInitialize((params: InitializeParams) => {
 			documentHighlightProvider: true,
 			documentSymbolProvider: true,
 			codeActionProvider: true,
-			colorProvider: true,
+			//colorProvider: true,
 			documentFormattingProvider: true,
 			renameProvider: true,
 			foldingRangeProvider: true,
-			
+
 		}
 	};
 	if (hasWorkspaceFolderCapability) {
@@ -121,6 +123,64 @@ documents.onDidChangeContent((e) => {
 	console.log("onDidChangeContentEvent");
 	console.log(JSON.stringify(e));
 	didChange(e);
+});
+connection.onCodeAction((e)=> {
+	console.log("onCodeAction");
+	console.log(JSON.stringify(e));
+	return null;
+});
+
+connection.onHover((e) => {
+	console.log("onHover");
+	console.log(JSON.stringify(e));
+	return null;
+});
+
+connection.onDeclaration((e)=>{
+	console.log("onDeclaration");
+	console.log(e);
+	return null;
+});
+connection.onTypeDefinition((e)=>{
+	console.log("onTypeDefinition");
+	console.log(JSON.stringify(e));
+	return null;
+});
+connection.onImplementation((e) => {
+	console.log("onImplementation");
+	console.log(JSON.stringify(e));
+	return null;
+});
+connection.onDocumentHighlight((e) => {
+	console.log("onDocumentHighlight");
+	console.log(JSON.stringify(e));
+	return null;
+});
+
+connection.onDocumentSymbol((e) => {
+	console.log("onDocumentSymbol");
+	console.log(JSON.stringify(e));
+	return null;
+});
+connection.onColorPresentation((e,a,b,c)=> {
+	console.log("onColorPresentation");
+	console.log(JSON.stringify(e));
+	return null;
+});
+connection.onDocumentFormatting((e)=> {
+	console.log("onDocumentFormatting");
+	console.log(JSON.stringify(e));
+	return null;
+});
+connection.onRenameRequest((e)=> {
+	console.log("onRenameRequest");
+	console.log(JSON.stringify(e));
+	return null;
+});
+connection.onFoldingRanges((e) => {
+	console.log("onFoldingRanges");
+	console.log(JSON.stringify(e));
+	return null;
 });
 
 
