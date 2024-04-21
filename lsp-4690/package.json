@@ -17,7 +17,7 @@
 		"vscode": "^1.43.0"
 	},
 	"activationEvents": [
-		"onLanguage:plaintext"
+		"onLanguage:4680"
 	],
 	"main": "./client/out/extension",
 	"contributes": {
@@ -43,7 +43,24 @@
 					"description": "Traces the communication between VS Code and the language server."
 				}
 			}
-		}
+		},
+		"languages": [
+            {
+                "id": "4680",
+                "aliases": [
+					"4680Basic",
+                    "4680basic",
+					"4680",
+                    "cbasic"
+                ],
+                "extensions": [
+                    ".bas",
+                    ".j86",
+                    ".BAS",
+                    ".J86"
+                ]
+            }
+        ]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",

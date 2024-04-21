@@ -27,7 +27,8 @@ import {
 import {log} from './components/log';
 import { LanguageCompletion } from './providers/completion';
 import { didChange } from './providers/didChange';
-import { connect } from 'http2';
+
+
 const logfile = '/log/server.log';
 const logger = new log(logfile);
 // Create a connection for the server, using Node's IPC as a transport.
