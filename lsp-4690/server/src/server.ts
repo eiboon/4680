@@ -27,6 +27,7 @@ import {
 import {log} from './components/log';
 import { LanguageCompletion } from './providers/completion';
 import { didChange } from './providers/didChange';
+import { legend } from './providers/semantics';
 
 
 const logfile = '/log/server.log';
@@ -78,6 +79,9 @@ connection.onInitialize((params: InitializeParams) => {
 			documentFormattingProvider: true,
 			renameProvider: true,
 			foldingRangeProvider: true,
+			semanticTokensProvider: {
+				legend: legend
+			}
 
 		}
 	};

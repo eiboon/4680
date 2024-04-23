@@ -1,26 +1,39 @@
-import * as vscode from 'vscode';
+import {
+    SemanticTokensLegend,
+    DocumentSemanticTokensProvider,
+    TextDocument,
+    ProviderResult,
+    SemanticTokens,
+    SemanticTokensBuilder,
+    Range,
+    Position,
+    languages
+} from 'vscode';
+
+
 
 const tokenTypes = ['class', 'interface', 'enum', 'function', 'variable'];
 const tokenModifiers = ['declaration', 'documentation'];
-export const legend = new vscode.SemanticTokensLegend(tokenTypes, tokenModifiers);
+export const legend = new SemanticTokensLegend(tokenTypes, tokenModifiers);
 
-const semanticProvider: vscode.DocumentSemanticTokensProvider = {
-  provideDocumentSemanticTokens(
-    document: vscode.TextDocument
-  ): vscode.ProviderResult<vscode.SemanticTokens> {
-    // analyze the document and return semantic tokens
+const semanticProvider: DocumentSemanticTokensProvider = {
+    provideDocumentSemanticTokens(
+        document: TextDocument
+    ): ProviderResult<SemanticTokens> {
+        // analyze the document and return semantic tokens
 
-    const tokensBuilder = new vscode.SemanticTokensBuilder(legend);
-    // on line 1, characters 1-5 are a class declaration
-    tokensBuilder.push(
-      new vscode.Range(new vscode.Position(1, 1), new vscode.Position(1, 5)),
-      'class',
-      ['declaration']
-    );
-    return tokensBuilder.build();
-  }
+        const tokensBuilder = new SemanticTokensBuilder(legend);
+        // on line 1, characters 1-5 are a class declaration
+        tokensBuilder.push(
+            new Range(new Position(1, 1), new Position(1, 5)),
+            'class',
+            ['declaration']
+        );
+        return tokensBuilder.build();
+    }
 };
 
 const selector = { language: 'java', scheme: 'file' }; // register for all Java documents from the local file system
-
-vscode.languages.registerDocumentSemanticTokensProvider(selector, semanticProvider, legend);
+export function RegisterSemanticToken(): void {
+    languages.registerDocumentSemanticTokensProvider(selector, semanticProvider, legend);
+}
